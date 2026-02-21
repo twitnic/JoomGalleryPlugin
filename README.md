@@ -1,7 +1,7 @@
 # JoomGalleryPlugin
 Content plugin for JoomGallery, a Joomla! component to maintain a photo library. This plugin allows to display single photos or photo galleries of a given category in Artlices and other pages on a Joomla! website.
 
-This plugin is to a larger  reimplementation of the [JoomPlu](https://github.com/JoomGalleryfriends/JoomPlu) for Joomla! 4 and later. 
+This plugin is to a larger reimplementation of the [JoomPlu](https://github.com/JoomGalleryfriends/JoomPlu) for Joomla! 4 and later. 
 
 ## Usage
 

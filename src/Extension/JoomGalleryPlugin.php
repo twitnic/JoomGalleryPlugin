@@ -339,4 +339,3 @@ class JoomGalleryPlugin extends CMSPlugin implements SubscriberInterface
 		$this->renderLinks($article->text, $legacy_tags);
 	}
 }
-?>

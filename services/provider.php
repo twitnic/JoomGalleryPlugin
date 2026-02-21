@@ -1,5 +1,7 @@
 <?php
 
+\defined('_JEXEC') or die;
+
 use Joomla\CMS\Extension\PluginInterface;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\PluginHelper;
@@ -8,24 +10,23 @@ use Joomla\DI\ServiceProviderInterface;
 use Joomla\Event\DispatcherInterface;
 use My\Plugin\Content\Joomgallery\Extension\JoomGalleryPlugin;
 
-    return new class() implements ServiceProviderInterface
+return new class() implements ServiceProviderInterface
+{
+    public function register(Container $container)
     {
-        public function register(Container $container)
-        {
-            $container->set(
-                PluginInterface::class,
-                function (Container $container) {
-    
-                    $config = (array) PluginHelper::getPlugin('content', 'joomgallery');
-                    $subject = $container->get(DispatcherInterface::class);
-                    $app = Factory::getApplication();
-                    
-                    $plugin = new JoomGalleryPlugin($subject, $config);
-                    $plugin->setApplication($app);
-    
-                    return $plugin;
-                }
-            );
-        }
-    };
-?>
+        $container->set(
+            PluginInterface::class,
+            function (Container $container) {
+
+                $config = (array) PluginHelper::getPlugin('content', 'joomgallery');
+                $subject = $container->get(DispatcherInterface::class);
+                $app = Factory::getApplication();
+
+                $plugin = new JoomGalleryPlugin($subject, $config);
+                $plugin->setApplication($app);
+
+                return $plugin;
+            }
+        );
+    }
+};
