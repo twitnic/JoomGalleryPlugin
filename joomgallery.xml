@@ -16,10 +16,10 @@
         <folder>language</folder>
     </files>
     <languages>
-        <language tag="en-GB">language/en-GB/JoomGalleryPlugin.ini</language>
-        <language tag="en-GB">language/en-GB/JoomGalleryPlugin.sys.ini</language>
-        <language tag="de-DE">language/de-DE/JoomGalleryPlugin.ini</language>
-        <language tag="de-DE">language/de-DE/JoomGalleryPlugin.sys.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_joomgallery.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_content_joomgallery.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_content_joomgallery.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_content_joomgallery.sys.ini</language>
     </languages>
     <config>
         <fields name="params">
